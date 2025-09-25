@@ -12,8 +12,9 @@ int main() {
 
     while (true) {
         // Ask the user for a business name.
-        cout << "Please enter the name of a business:   "; //space isn't showing when running program??
+        cout << "Please enter the name of a business:\n"; //space isn't showing when running program??
         getline(cin, name); // This allows spaces in the name.
+        //cin >> name;
 
         // Add the name to our list.
         businessNames.push_back(name);
@@ -35,7 +36,7 @@ int main() {
         cout << endl;
 
         // Ask the user if they want to add another business.
-        cout << "Another business?   "; //space isn't showing when running program??
+        cout << "Another business?\n"; //space isn't showing when running program??
         getline(cin, another);
 
         // If the user does not type y/Y/yes/Yes, exit the loop.
